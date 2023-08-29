@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "352128566046",
+    "project_id": "latest-news-1",
+    "storage_bucket": "latest-news-1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:352128566046:android:9bc1eec77b14f78a66bf0f",
+        "android_client_info": {
+          "package_name": "zfani.assaf.news"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "352128566046-ip8g8athego0g2ku17jjp9o9bl5pif1o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "zfani.assaf.news",
+            "certificate_hash": "071950a399a1a1a8545b9a6fc5673c6e59438cdc"
+          }
+        },
+        {
+          "client_id": "352128566046-norjgjsnd3mdaak7k8frg9b6n24o5c71.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDVFG749feOg2qAS1Ge0zkcQVBkZCk9o_I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "352128566046-918fck8ba17raref20fuollc5s144cra.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "352128566046-e0ljt4dcc69qs0kv7kb9q32f58k1un23.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "zfani.assaf.news"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
