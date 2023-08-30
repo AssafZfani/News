@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:firebase_ui_oauth_google/firebase_ui_oauth_google.dart';
@@ -12,10 +14,10 @@ class Authenticate extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SignInScreen(
-        providers: [GoogleProvider(clientId: clientId)],
+    providers: [GoogleProvider(clientId: Platform.isAndroid ? androidClientId : iosClientId)],
         actions: [
           AuthStateChangeAction((context, state) {
-            if(state is SignedIn) {
+            if (state is SignedIn) {
               User? user = state.user;
               /*await DatabaseService(uid: user.uid).updateUserData(user.email, user.displayName, user.photoURL, "en", "light");*/
               BlocProvider.of<AuthBloc>(context).add(AuthCheckEvent());

@@ -26,7 +26,8 @@ class Home extends StatelessWidget {
         ),
         actions: [
           IconButton(
-              onPressed: () => showSearch(context: context, delegate: CustomSearchDelegate(bodyWidget: _buildBody(true))),
+              onPressed: () =>
+                  showSearch(context: context, delegate: CustomSearchDelegate(bodyWidget: _buildBody(true))),
               icon: const Icon(Icons.search, color: Colors.white)),
           IconButton(
               onPressed: () => _onShowFavoritesViewPressed(context), icon: const Icon(Icons.star, color: Colors.white)),
@@ -44,7 +45,7 @@ class Home extends StatelessWidget {
             return const Center(child: Icon(Icons.refresh));
           }
           if (state is RemoteNewsFeedDone) {
-            return fromSearch ? NewsFeedListWidget(state: state) :  HomeWidget(state: state);
+            return fromSearch ? NewsFeedListWidget(state: state) : HomeWidget(state: state);
           }
           return Container();
         },
